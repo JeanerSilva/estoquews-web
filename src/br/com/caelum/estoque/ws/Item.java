@@ -42,7 +42,20 @@ public class Item {
     protected int quantidade;
     protected String tipo;
 
-    /**
+    
+    
+    
+    public Item(String codigo, String nome, int quantidade, String tipo) {
+		super();
+		this.codigo = codigo;
+		this.nome = nome;
+		this.quantidade = quantidade;
+		this.tipo = tipo;
+	}
+
+    public Item () {}
+    
+	/**
      * Gets the value of the codigo property.
      * 
      * @return

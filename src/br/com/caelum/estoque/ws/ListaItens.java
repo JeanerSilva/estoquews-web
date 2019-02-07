@@ -66,7 +66,7 @@ public class ListaItens {
 
 	@Override
 	public String toString() {
-		return "ListaItens [item=" + item + "]";
+		return "ListaItens [\nitem=" + item + "]";
 	}
 
     

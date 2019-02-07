@@ -13,7 +13,14 @@ public class EstoqueWSImpl implements EstoqueWS {
 	public ListaItens todosOsItens(Filtros filtros) {
 	    System.out.println("Chamando todos os Itens");
 	    ListaItens listaItens = new ListaItens();
-	    listaItens.item = Arrays.asList(geraItem());
+	    listaItens.item = Arrays.asList(
+	    		new Item("MEA","MEAN", 5, "Livro"), 
+	    		new Item("JEA","JEAN", 2, "Celular"),
+	    		new Item("TEA","TEAN", 1, "Celular")
+	    		
+	    		);
+	    
+	    
 	    return listaItens;
 	}
 
@@ -27,12 +34,11 @@ public class EstoqueWSImpl implements EstoqueWS {
 
 	//método auxiliar
 	private Item geraItem() {
-	    Item item = new Item();
-	    item.codigo = "MEA";
-	    item.nome = "MEAN";
-	    item.quantidade = 5;
-	    item.tipo = "Livro";
+	    Item item = new Item("MEA","MEAN",5, "Livro");
 	    return item;
 	}
 
+	
+	
+	
 }
